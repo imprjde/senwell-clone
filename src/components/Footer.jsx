@@ -12,7 +12,7 @@ export default function Footer() {
   let url =
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
-    <footer className="bg-[#131022]  pt-5  text-white ">
+    <footer className="bg-[#131022] overflow-x-hidden  pt-5  text-white ">
       <div id="top" className="flex m-auto mb-20 items-center justify-around">
         <div id="Top_Left" className="flex items-center ">
           <div className="bg-red- pl-28 space-y-4 X-X p-5 w-fit">

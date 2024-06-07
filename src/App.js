@@ -20,7 +20,7 @@ function App() {
           <br /> be viewed on Desktop screens.
         </span>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:block ">
         <Header />
         <Banner />
         <Introduction />

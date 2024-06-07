@@ -110,7 +110,7 @@ export default function Clients() {
   }, [four]);
 
   return (
-    <div className="bg-white min-h-screen overflow-x-hidden">
+    <div className="bg-white  min-h-screen overflow-x-hidden">
       <div id="clients">
         <div className="mt-[50px] mb-[15px] space-y-20">
           <div

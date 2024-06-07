@@ -106,7 +106,7 @@ export default function Banner() {
     "https://player.vimeo.com/video/870167957?badge=0&autopause=0&player_id=0&app_id=58479&background=1&loop=1&muted=1&allowfullscreen=1&playsinline=1";
 
   return (
-    <div className="relative bg-white mb-10 w-full h-screen">
+    <div className="relative bg-white  mb-10 w-full h-screen">
       <div className="w-full">
         <iframe
           className="absolute top-0 left-0 w-full h-full object-cover"
