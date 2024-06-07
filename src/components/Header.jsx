@@ -43,18 +43,20 @@ export default function Header() {
     setShowDropDownTwo(false);
   };
 
-  console.log("FFFF", linksArray);
   let url =
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
     <div className="sticky top-0 bg-white shadow-2xl z-50 shadow-black flex justify-between ">
-      <div className="flex cursor-pointer  w-[60%] px-8 py-2" id="left">
+      <div
+        className="flex  space-x-1 cursor-pointer  w-[60%] px-8 py-2"
+        id="left"
+      >
         <div>
           <img className="w-[90px]" src={url} alt="Logo" />
         </div>
-        <div className="  w-full  pr-5 flex flex-col items-center justify-center ">
+        <div className="   w-full  pr-5 flex flex-col items-center justify-center ">
           <span
-            className="text-[#2460A6] ml-3 w-full text-end   font-bold text-xl "
+            className="text-[#2460A6] w-full text-left   font-bold text-xl "
             style={{ fontFamily: "Manrope, sans-serif" }}
           >
             SENWELL GROUP PRIVATE LIMITED

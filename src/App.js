@@ -14,17 +14,25 @@ import Services from "./components/Services";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Introduction />
-      <Animation />
-      <Services />
-      <Clients />
-      <Review />
-      <Rewards />
-      <Industries />
-      <OurWork />
-      <Footer />
+      <div className="md:hidden min-h-screen h-full m-auto flex justify-center items-center  bg-gray-900 ">
+        <span className="text-white text-justify font-medium text-xl tracking-wider">
+          This Senwell website can only
+          <br /> be viewed on Desktop screens.
+        </span>
+      </div>
+      <div className="hidden md:block">
+        <Header />
+        <Banner />
+        <Introduction />
+        <Animation />
+        <Services />
+        <Clients />
+        <Review />
+        <Rewards />
+        <Industries />
+        <OurWork />
+        <Footer />
+      </div>
     </div>
   );
 }

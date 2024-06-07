@@ -106,7 +106,7 @@ export default function Banner() {
     "https://player.vimeo.com/video/870167957?badge=0&autopause=0&player_id=0&app_id=58479&background=1&loop=1&muted=1&allowfullscreen=1&playsinline=1";
 
   return (
-    <div className="relative bg-white w-full h-screen">
+    <div className="relative bg-white mb-10 w-full h-screen">
       <div className="w-full">
         <iframe
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -117,7 +117,7 @@ export default function Banner() {
           title="Background_Video"
         />
       </div>
-      <div className="z-10 space-y-5 pl-[110px] -mt-6 relative flex flex-col items-start justify-center h-full px-10 bg-black bg-opacity-50">
+      <div className="z-10 space-y-5 pl-[110px] -mt-6 relative flex flex-col items-start justify-center h-full px-10 ">
         <h1
           className="text-white font-bold text-[30px] w-[40%] text-left"
           style={{ fontFamily: "Manrope, sans-serif", lineHeight: "2.2rem" }}

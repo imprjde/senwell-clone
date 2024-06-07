@@ -31,7 +31,6 @@ export default function Carousel({ images, width, slidesToShow }) {
                 title={title}
                 width={width}
               />
-              {console.log("thumbnail", thumbnail)}
             </div>
           ))}
         </Slider>
