@@ -21,10 +21,10 @@ export default function Carousel({ images, width, slidesToShow }) {
   return (
     <div className="flex items-center  justify-center ">
       <div className="w-full flex  flex-col m-auto justify-center">
-        <Slider {...settings} className="flex flex-row  justify-center">
+        <Slider {...settings} className="flex flex-row   justify-center">
           {" "}
           {images.map(({ thumbnail, title }, i) => (
-            <>
+            <div className="space-x-3">
               <CarouselItem
                 key={i}
                 image={thumbnail}
@@ -32,7 +32,7 @@ export default function Carousel({ images, width, slidesToShow }) {
                 width={width}
               />
               {console.log("thumbnail", thumbnail)}
-            </>
+            </div>
           ))}
         </Slider>
       </div>

@@ -112,7 +112,7 @@ export default function Clients() {
   return (
     <div className="bg-white min-h-screen overflow-x-hidden">
       <div id="clients">
-        <div className="mt-[50px] mb-[15px] space-y-10">
+        <div className="mt-[50px] mb-[15px] space-y-20">
           <div
             className="text-5xl font-[500px] text-[#131022]"
             style={{ fontFamily: "Manrope, sans-serif" }}
