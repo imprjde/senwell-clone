@@ -12,7 +12,7 @@ export default function DropDown({ linksArray, id, setShowDropDown }) {
       exit={{ opacity: 0 }}
       className={`absolute ${
         id === 1 ? "right-[400px]" : "right-[300px]"
-      } mt-2 w-72 rounded-md shadow-lg z-10`}
+      } mt-2 w-72 rounded-md shadow-lg z-50`}
     >
       <div className=" shadow-2xl shadow-black  py-5 bg-white text-left pl-4 shadow-xs">
         <div

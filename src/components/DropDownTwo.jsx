@@ -9,7 +9,7 @@ export default function DropDownTwo({ setShowDropDown, id, linksArray }) {
       transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}
       className="absolute 
-         mt-2 w-[580px] right-[110px] rounded-md shadow-lg z-10"
+         mt-2 w-[580px] right-[110px] rounded-md shadow-lg z-50"
     >
       <div className=" shadow-2xl  shadow-black  py-5 bg-white text-left  shadow-xs">
         <div
