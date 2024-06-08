@@ -65,7 +65,7 @@ const images = [
 
 export default function Industries() {
   return (
-    <div className="min-h-screen w-full -mt-5 flex m-auto space-y-10 flex-col bg-red-5  justify-center items-center ">
+    <div className="min-h-screen overflow-x-hidden w-full -mt-5 flex m-auto space-y-10 flex-col bg-red-5  justify-center items-center ">
       <div className="bg-green-0 w-full">
         <span
           className="font-medium text-5xl text-[#0B2E58]"

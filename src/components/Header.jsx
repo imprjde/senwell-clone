@@ -46,7 +46,7 @@ export default function Header() {
   let url =
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
-    <div className="sticky  top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
+    <div className="sticky top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
       <div
         className="flex  space-x-1 cursor-pointer  w-[60%] px-8 py-2"
         id="left"
