@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function DropDownTwo({ setShowDropDown, id, linksArray }) {
+export default function DropDownTwo({ handleExit, setShowDropDownTwo }) {
   return (
     <motion.div
+      onMouseEnter={() => setShowDropDownTwo(true)}
+      onMouseLeave={handleExit}
       initial={{ translateZ: -100, opacity: 0, height: "0" }}
       animate={{ translateZ: 0, opacity: 1, height: "100%" }}
       transition={{ duration: 0.5 }}
@@ -18,21 +20,38 @@ export default function DropDownTwo({ setShowDropDown, id, linksArray }) {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <div className="flex bg- text-left m-auto justify-around">
-            <div className="">
+          <div className="flex text-left m-auto justify-around">
+            <div >
               <div>
                 <span className="text-[#222] text-[17px] font-semibold">
                   FrontEnd
                 </span>
               </div>
               <div className="flex flex-col mt-2 space-y-7 text-[#7d828c]  text-[14.5px]">
-                <span className="hover:text-sky-500 cursor-pointer">React</span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
+                  React
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Angular
-                </span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Next Js
-                </span>
+                </motion.span>
               </div>
             </div>
             <div>
@@ -42,14 +61,38 @@ export default function DropDownTwo({ setShowDropDown, id, linksArray }) {
                 </span>
               </div>
               <div className="flex flex-col mt-2 space-y-7 text-[#7d828c]  text-[14.5px]">
-                <span className="hover:text-sky-500 cursor-pointer">.Net</span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
+                  .Net
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Node Js
-                </span>
-                <span className="hover:text-sky-500 cursor-pointer">Java</span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
+                  Java
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Nest Js
-                </span>
+                </motion.span>
               </div>
             </div>
             <div>
@@ -60,16 +103,38 @@ export default function DropDownTwo({ setShowDropDown, id, linksArray }) {
                 </span>
               </div>
               <div className="flex flex-col mt-2 space-y-7 text-[#7d828c]  text-[14.5px]">
-                <span className="hover:text-sky-500 cursor-pointer">iOS</span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
+                  iOS
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Android
-                </span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   React Native
-                </span>
-                <span className="hover:text-sky-500 cursor-pointer">
+                </motion.span>
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ ease: "easeInOut" }}
+                  className="hover:text-sky-500 cursor-pointer"
+                >
                   Flutter
-                </span>
+                </motion.span>
               </div>
             </div>
           </div>

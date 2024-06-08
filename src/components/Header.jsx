@@ -47,10 +47,7 @@ export default function Header() {
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
     <div className="sticky top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
-      <div
-        className="flex  space-x-1 cursor-pointer  w-[60%] px-8 py-2"
-        id="left"
-      >
+      <div className="flex  space-x-1 cursor-pointer  w-[60%] px-8 py-2">
         <div>
           <img className="w-[90px]" src={url} alt="Logo" />
         </div>
@@ -69,11 +66,8 @@ export default function Header() {
           </span>
         </div>
       </div>
-      <div
-        className="items-center bg-purple- pr-20  w-full justify-end flex"
-        id="right"
-      >
-        <div className="space-x-8">
+      <div className="items-center pr-20  w-full justify-end flex">
+        <div className="space-x-8 ">
           {navigations.map((link, i) => (
             <span
               onMouseEnter={() => {
@@ -83,8 +77,7 @@ export default function Header() {
                   handleDropdown(i);
                 }
               }}
-              onMouseLeave={handleExit}
-              className="font-[600] hover:text-blue-800 cursor-pointer text-[#000000DE] text-[14px]"
+              className="font-[600]  h-full  m-auto hover:text-blue-800 cursor-pointer text-[#000000DE] text-[14px]"
               style={{ fontFamily: "Manrope, sans-serif" }}
             >
               {link}
@@ -96,11 +89,17 @@ export default function Header() {
                 linksArray={linksArray}
                 id={id}
                 setShowDropDown={setShowDropDown}
+                handleExit={handleExit}
               />
             )}
           </AnimatePresence>
           <AnimatePresence>
-            {showDropDownTwo && <DropDownTwo />}
+            {showDropDownTwo && (
+              <DropDownTwo
+                handleExit={handleExit}
+                setShowDropDownTwo={setShowDropDownTwo}
+              />
+            )}
           </AnimatePresence>
         </div>
       </div>

@@ -10,6 +10,7 @@ import OurWork from "./components/OurWork";
 import Review from "./components/Review";
 import Rewards from "./components/Rewards";
 import Services from "./components/Services";
+import TopScroller from "./components/TopScroller";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </span>
       </div>
       <div className="hidden md:block ">
+        <TopScroller />
         <Header />
         <Banner />
         <Introduction />

@@ -5,11 +5,11 @@ export default function Introduction() {
     "https://senwellsys.com/static/media/Who2.57b4b57cb37a7772dc26.webp";
   return (
     <div className=" bg-[#F3F6FF] h-screen  flex px-28 py-10 space-x-4">
-      <div className="w-1/2 text-left    " id="content ">
+      <div className="w-1/2 text-left" >
         <div>
           <span className="font-bold text-[2.5rem]">Who Are We?</span>
           <span className="text-[#585c7b] space-y-5 text-[16px]">
-            <p className=" text-justify mt-4 ">
+            <p className=" text-justify mt-4">
               Senwell Group Private Limited is an innovative global platform,
               seamlessly blending web development, design, and digital marketing
               services, including social media marketing.Our mission is to
@@ -41,7 +41,7 @@ export default function Introduction() {
           </span>
         </div>
       </div>
-      <div className="w-1/2" id="image">
+      <div className="w-1/2">
         <div>
           <img className="rounded-lg" src={src} alt="meetingLogo" />
         </div>

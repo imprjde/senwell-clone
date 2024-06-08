@@ -26,7 +26,6 @@ export default function Animation() {
         }
         transition={{ duration: 1.5 }}
         className="h- w-1/2"
-        id="content"
       >
         <div className="flex flex-col text-left mx-10 my-4">
           <span className="text-[#3D8ED7] font-bold text-4xl">Start Fast.</span>
@@ -55,7 +54,6 @@ export default function Animation() {
         }
         transition={{ duration: 1.5 }}
         className="w-1/2  flex m-auto justify-center"
-        id="image"
       >
         <div className="flex m-auto justify-center">
           <img className="w-[50%] h-auto object-cover" src={src} alt="" />

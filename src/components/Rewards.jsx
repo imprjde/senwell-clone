@@ -18,10 +18,10 @@ export default function Rewards() {
     },
   ];
   return (
-    <div className="bg-red-500 ">
+    <div>
       <div className="bg-black py-10    flex m-auto justify-center items-center ">
-        <div className="bg-red-5 flex m-auto justify-center space-x-10 items-center">
-          <div className="bg-yellow-5 flex flex-col">
+        <div className=" flex m-auto justify-center space-x-10 items-center">
+          <div className="flex flex-col">
             <span
               className="text-white text-[40px]"
               style={{ fontFamily: "Manrope, sans-serif" }}

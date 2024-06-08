@@ -2,7 +2,7 @@ export default function CarouselItem({ image, title, width }) {
   return (
     <div className=" m-auto flex space-x-3 justify-center ">
       <div className=" space-y-3 flex flex-col">
-        <span className="">
+        <span>
           <img className="w-80" src={image} alt="" />{" "}
         </span>
         <span

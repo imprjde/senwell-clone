@@ -54,7 +54,7 @@ export default function Review() {
   );
   return (
     <div className="bg-[#F9FAFB]  mt-10  min-h-screen py-32 ">
-      <div id="heading">
+      <div>
         <span
           className="font-medium text-5xl text-[#0B2E58]"
           style={{ fontFamily: "Manrope, sans-serif" }}
@@ -63,19 +63,19 @@ export default function Review() {
           What Our Clients Say{" "}
         </span>
       </div>
-      <div className="bg-pink-6 mx-[88px] mt-14" id="review_cards">
+      <div className=" mx-[88px] mt-14" >
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8 ">
           {reviews.map((review, i) => (
             <div
               key={i}
               className="bg-white  shadow-md rounded-lg px-5 py-10 space-y-8 flex flex-col"
             >
-              <span className="bg-green-5 text-[#212529] font-extrabold text-[26px] text- text-center">
+              <span className=" text-[#212529] font-extrabold text-[26px] text- text-center">
                 {review.title}
               </span>
-              <span className="bg-orange-5">{svg}</span>
+              <span >{svg}</span>
               <span
-                className="bg-teal-5  text-[16px] text-justify text-[#333]"
+                className=" text-[16px] text-justify text-[#333]"
                 style={{
                   fontFamily: "Manrope, sans-serif",
                 }}
@@ -83,10 +83,10 @@ export default function Review() {
                 {review.review}
               </span>
               <span className="flex flex-col">
-                <span className="bg-sky-5 font-[500] text-[#212529]  text-left">
+                <span className="font-[500] text-[#212529]  text-left">
                   {review.name}
                 </span>
-                <span className="bg-red-5 text-left text-[#212529]  text-[13px]">
+                <span className=" text-left text-[#212529]  text-[13px]">
                   {review.place}
                 </span>
               </span>

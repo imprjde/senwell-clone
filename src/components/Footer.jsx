@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
 import { AiFillFacebook } from "react-icons/ai";
@@ -12,11 +10,11 @@ export default function Footer() {
   let url =
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
-    <footer className="bg-[#131022] overflow-x-hidden  pt-5  text-white ">
-      <div id="top" className="flex m-auto mb-20 items-center justify-around">
-        <div id="Top_Left" className="flex items-center ">
-          <div className="bg-red- pl-28 space-y-4 X-X p-5 w-fit">
-            <div id="Logo_Div" className="bg-sky-5 text-left w-fit flex">
+    <footer className="bg-[#131022] overflow-x-hidden  items-start  pt-5  text-white ">
+      <div className="flex m-auto mb-20  items-center justify-around">
+        <div className="flex items-center ">
+          <div className="pl-28  space-y-4 X-X p-5 w-fit">
+            <div className=" text-left w-fit flex">
               <span>
                 <img className="w-[90px]" src={url} alt="" />
               </span>
@@ -29,7 +27,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <div id="Address_Div" className="bg-green-5 text-left">
+            <div className=" text-left">
               <div>
                 <span
                   className="font-semibold text-xl"
@@ -52,7 +50,7 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <div id="Social_Links_Div" className="bg-yellow- text-left">
+            <div className="text-left">
               <div className="pb-">
                 <span className="text-white tracking-wider text-[1.1rem] font-bold">
                   Get In Touch With Us!
@@ -89,15 +87,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div
-          id="Top_Right"
-          className="flex m-auto justify-between pl-20 space-x-24 bg-orange-"
-        >
-          <div className="bg-orange-">
-            <div id="ONE" className="text-left">
+        <div className="flex m-auto justify-between pl-20] space-x-24 ">
+          <div>
+            <div className="text-left">
               <div>
                 <span
-                  className="text-[1.25rem] font-semibold mb-[1rem] "
+                  className="text-[1.25rem] font-semibold mb-[1rem]] "
                   style={{ fontFamily: "Manrope, sans-serif" }}
                 >
                   Popular categories
@@ -121,8 +116,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="bg-sky-5">
-            <div id="TWO" className="text-left">
+          <div>
+            <div className="text-left">
               <div>
                 <span
                   className="text-[1.25rem] font-semibold mb-[1rem]"
@@ -143,8 +138,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="bg-pink-5">
-            <div id="THREE" className="text-left">
+          <div>
+            <div className="text-left">
               <div>
                 <span
                   className="text-[1.25rem] font-semibold mb-[1rem]"
@@ -166,16 +161,13 @@ export default function Footer() {
                 <span className="cursor-pointer">Android</span>
               </div>
             </div>
-            <div id="TWO"></div>
-            <div id="THREE"></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
 
-      <div
-        className="bg-red-5 py-5 border border-x-0 border-b-0 border-t-gray-800"
-        id="bottom"
-      >
+      <div className="py-5 border border-x-0 border-b-0 border-t-gray-800">
         <div
           className="text-[#FFFFFFD9] text-[13px]"
           style={{ fontFamily: "Manrope, sans-serif" }}

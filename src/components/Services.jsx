@@ -55,8 +55,8 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-[#F3F6FF] cursor-pointer min-h-screen bg-red py-16 space-y-10">
-      <div className="bg-green-5">
+    <div className="bg-[#F3F6FF] cursor-pointer min-h-screen py-16 space-y-10">
+      <div>
         <span
           className="font-medium text-5xl text-[#0B2E58]"
           style={{ fontFamily: "Manrope, sans-serif" }}
@@ -64,7 +64,7 @@ export default function Services() {
           Services we Offer
         </span>
       </div>
-      <div className="bg-yellow-">
+      <div>
         <span
           className="font-medium text-2xl text-[#333333]"
           style={{ fontFamily: "Manrope, sans-serif" }}
@@ -73,7 +73,7 @@ export default function Services() {
           of product development.
         </span>
       </div>
-      <div className="bg-yellow- py-10 px-[110px] " id="card">
+      <div className=" py-10 px-[110px] ">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8 ">
           {services.map((service, i) => (
             <div
@@ -92,7 +92,7 @@ export default function Services() {
                 />
               </div>
               <div
-                className={`bg-purple-3  mx-5 text-justify ${
+                className={` mx-5 text-justify ${
                   i % 2 !== 0 ? "pt-5 " : "mt-6 mb-"
                 }`}
               >

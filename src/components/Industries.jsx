@@ -65,8 +65,8 @@ const images = [
 
 export default function Industries() {
   return (
-    <div className="min-h-screen overflow-x-hidden w-full -mt-5 flex m-auto space-y-10 flex-col bg-red-5  justify-center items-center ">
-      <div className="bg-green-0 w-full">
+    <div className="min-h-screen overflow-x-hidden w-full -mt-5 flex m-auto space-y-10 flex-col justify-center items-center ">
+      <div className=" w-full">
         <span
           className="font-medium text-5xl text-[#0B2E58]"
           style={{ fontFamily: "Manrope, sans-serif" }}
@@ -75,7 +75,7 @@ export default function Industries() {
           Industries We Serve
         </span>
       </div>
-      <div className="container pl-10 mx-auto flex flex-col justify-center bg-yellow-5">
+      <div className="container pl-10 mx-auto flex flex-col justify-center ">
         <Carousel images={images} width={350} slidesToShow={3} />
       </div>
     </div>

@@ -28,8 +28,8 @@ export default function OurWork() {
     },
   ];
   return (
-    <div className="min-h-screen bg-red-5 mb-16 px-20">
-      <div className="bg-green-5 flex flex-col" id="content">
+    <div className="min-h-screen mb-16 px-20">
+      <div className=" flex flex-col">
         <span
           className="font-medium text-5xl text-[#0B2E58] "
           style={{ fontFamily: "Manrope, sans-serif" }}
@@ -49,7 +49,7 @@ export default function OurWork() {
           Transforming Today, Powering Tomorrow.
         </span>
       </div>
-      <div className="mt-20" id="images">
+      <div className="mt-20">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-3 xl:gap-x-8 ">
           {images.map((image, i) => (
             <div

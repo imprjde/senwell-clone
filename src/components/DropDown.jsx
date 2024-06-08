@@ -1,11 +1,16 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function DropDown({ linksArray, id, setShowDropDown }) {
+export default function DropDown({
+  linksArray,
+  id,
+  setShowDropDown,
+  handleExit,
+}) {
   return (
     <motion.div
       onMouseEnter={() => setShowDropDown(true)}
+      onMouseLeave={handleExit}
       initial={{ translateZ: -100, opacity: 0, height: "0" }}
       animate={{ translateZ: 0, opacity: 1, height: "100%" }}
       transition={{ duration: 0.5 }}
@@ -24,14 +29,16 @@ export default function DropDown({ linksArray, id, setShowDropDown }) {
           <>
             {linksArray &&
               linksArray.map((link, i) => (
-                <span
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 4 }}
+                  transition={{ ease: "easeInOut" }}
                   key={i}
-                  href="#portfolio"
-                  className="block px-4 py-2 hover:ml-2 cursor-pointer hover:text-sky-500 text-[14.5px] tracking-wide text-[#7d828c] font-normal "
+                  className="block px-4 py-2 cursor-pointer text-[14.5px] tracking-wide text-[#7d828c] font-normal transition-colors duration-300 ease-in-out hover:text-sky-500 "
                   role="menuitem"
                 >
                   {link}
-                </span>
+                </motion.span>
               ))}
           </>
         </div>

@@ -111,7 +111,7 @@ export default function Clients() {
 
   return (
     <div className="bg-white   min-h-screen overflow-x-hidden">
-      <div id="clients">
+      <div>
         <div className="mt-[50px] mb-[15px] space-y-20">
           <div
             className="text-5xl font-[500px] text-[#131022]"
@@ -119,12 +119,12 @@ export default function Clients() {
           >
             Some of Our Premium Clients
           </div>
-          <div className="container pl-10 mx-auto flex flex-col justify-center bg-yellow-5">
+          <div className="container pl-10 mx-auto flex flex-col justify-center ">
             <Carousel images={logos} width={2} slidesToShow={4} />
           </div>
         </div>
       </div>
-      <div id="impact">
+      <div>
         <div className="mt-20">
           <div
             className="text-5xl  font-[500px] text-[#131022]"
@@ -134,7 +134,7 @@ export default function Clients() {
           </div>
         </div>
 
-        <div className="bg-red-6 px-24 w-full">
+        <div className=" px-24 w-full">
           <div
             className="bg-[#F3F6FF] mt-14 justify-between  space-x-20 py-[60px]  flex w-full m-auto px-16"
             style={{
@@ -179,7 +179,7 @@ export default function Clients() {
                 <br /> Engineers
               </span>
             </div>
-            <div className=" bg-yellow-5 flex bg min-w-[180px] flex-col">
+            <div className="flex bg min-w-[180px] flex-col">
               <span className="text-[#21aae4] font-bold text-[3.3rem]">
                 {four}+
               </span>
