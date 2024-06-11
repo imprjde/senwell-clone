@@ -77,7 +77,7 @@ export default function Banner() {
       </div>
 
       {/* HERE  */}
-      <div className="z-10  space-y-5 py-6 md:py-0  md:pl-[110px]   -top-[340p x] md:-top-0  -mt-6 relative flex flex-col items-start justify-center h-full px-10 ">
+      <div className="z-10  space-y-5 py-6 md:py-0  mt-[80px] md:mt-10 md:pl-[110px]   -top-[340p x] md:-top-0  -mt-6 relative flex flex-col items-start justify-center h-full px-10 ">
         <h1
           className="text-white hidden md:flex font-bold text-[30px] w-[40%] text-left"
           style={{ fontFamily: "Manrope, sans-serif", lineHeight: "2.2rem" }}

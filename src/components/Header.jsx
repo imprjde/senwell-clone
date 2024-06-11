@@ -109,7 +109,7 @@
 
 ///////////////////////RESP///////////////////////////////
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DropDown from "./DropDown";
 import { AnimatePresence, motion } from "framer-motion";
 import DropDownTwo from "./DropDownTwo";
@@ -160,6 +160,7 @@ export default function Header() {
   const [showDropDownTwo, setShowDropDownTwo] = useState(false);
   const [id, setId] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -175,10 +176,24 @@ export default function Header() {
     setShowDropDownTwo(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   let url =
     "https://senwellsys.com/static/media/finalsenwellgrouplogo.fbb0ce6431b7262166b7.png";
   return (
-    <div className="sticky overflow-x-hidden md:overflow-x-visible top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
+    // <div className="sticky overflow-x-hidden md:overflow-x-visible top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
+    <div className="fixed w-full overflow-x-hidden md:overflow-x-visible top-0 bg-white shadow-2xl z-40 shadow-black flex justify-between ">
       <div className="flex  space-x-1 cursor-pointer  md:w-[60%] px-1 md:px-8 py-2">
         <div>
           <img className="w-[100px] md:w-[90px]" src={url} alt="Logo" />
@@ -241,7 +256,6 @@ export default function Header() {
           </AnimatePresence>
         </div>
       </div>
-
       <div
         onClick={toggleSidebar}
         class="m-auto flex flex-col md:hidden justify-end"
@@ -258,6 +272,7 @@ export default function Header() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={sidebarRef}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -270,7 +285,6 @@ export default function Header() {
             >
               <IoIosArrowUp />
             </button>
-            {/* Sidebar content */}
             <div className="space-y-7 mt-10 bg-red-5  font-medium text-[1rem]  text-left pl-10">
               <span className="block text-gray-800 ">Home</span>
               <span

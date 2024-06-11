@@ -43,6 +43,7 @@
 
 import "./App.css";
 import Animation from "./components/Animation";
+import Animation2 from "./components/Animation2";
 import Banner from "./components/Banner";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
@@ -57,12 +58,17 @@ import TopScroller from "./components/TopScroller";
 
 function App() {
   return (
-    <div className="App">
-      {/* <TopScroller /> */}
+    <div className="App overflow-x-hidden">
+      <TopScroller />
       <Header />
       <Banner />
       <Introduction />
-      <Animation />
+      <div className="hidden md:block">
+        <Animation />
+      </div>
+      <div className="md:hidden">
+        <Animation2 />
+      </div>
       <Services />
       <Clients />
       <Review />
